@@ -1,0 +1,27 @@
+{
+    "name": "delarocha/searchable-trigrams",
+    "description": "Simple trigrams search implementing Searchable",
+    "homepage": "https://github.com/dlr-delarocha/searchable-trigrams",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alberto de la Rocha",
+            "email": "delarocha.alberto01@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">7.1",
+        "spatie/laravel-searchable": "~1.6"
+    },
+    "replace": {
+        "laravel/framework": "*"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Searchable\\Fuzzy\\": "src/"
+        }
+    }
+}
