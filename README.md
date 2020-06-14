@@ -50,6 +50,8 @@ Searchable trigrams is basically a custom search aspect to "spatie/searchable" f
 With the models prepared you can search them like this:
 
 ```php
+use Searchable\Fuzzy\Search;
+
 $searchResults = (new Search())
    ->registerSearchMethod(User::class, 'name')
    ->search('john');
@@ -58,6 +60,8 @@ $searchResults = (new Search())
 You can include an extra parameter to specify you are using your search as autocomplete 
 
 ```php
+use Searchable\Fuzzy\Search;
+
 $searchResults = (new Search())
    ->registerSearchMethod(User::class, 'name', true)
    ->search('john');
