@@ -21,7 +21,7 @@ composer require delarocha/searchable-trigrams
 ### Preparing your models
 ___
 
-For a better performance in your searches include a migration file indexing all files will you use to your searches in the following way.
+For a better performance in your searches include a migration file indexing all fields will you use to your searches in the following way.
 ```php
 public function up()
 {
